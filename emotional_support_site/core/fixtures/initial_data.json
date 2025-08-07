@@ -1,0 +1,32 @@
+[
+  {
+    "model": "auth.User",
+    "pk": 1,
+    "fields": {
+      "username": "exampleuser",
+      "password": "hashedpassword"
+      
+    }
+  },
+  {
+    "model": "core.CrisisHotline",
+    "pk": 1,
+    "fields": {
+      "country": "USA",
+      "number": "123-456-7890",
+      "description": "National Crisis Hotline",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.SelfAssessment",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "assessment_date": "2025-08-08T12:00:00Z",
+      "mood_score": 7,
+      "anxiety_level": 5,
+      "notes": "Feeling okay."
+    }
+  }
+]
